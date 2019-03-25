@@ -90,21 +90,25 @@ ALTER ROLE tweeterapp SET timezone TO 'UTC';
 Lastly, run the migrations to your postgres database:
 
 Migrate the database.
-    ```shell
+
+```
      # run production migrations
     (env)$ python manage.py makemigrations
     (env)$ python manage.py migrate
-    ```
+```
+
 Load sample fixtures that will populate the database with a handful of users and tweeters.
 **Note:** If fixtures are loaded, a sample user named 'Bob' will always be logged in by default.
 
+```
     (env)$ python manage.py loaddata initial_data
-
+```
 Run the local server after updating the static assets via:
-    ```shell
+
+```
     (env)$ python manage.py collectstatic
     (env)$ python manage.py runserver
-    ```
+```
 
 
 ## Deploy to Azure App Service
