@@ -112,9 +112,7 @@ Run the local server after updating the static assets via:
 
 With the app now up and running, deploy it to Azure.
 
-Be sure to update the environment variables in Production. Take special care in updating the following:
-
-The following environment variables must be present in *production*:
+Be sure to update the environment variables which you set locally in Production. Take special care in updating the following to make sure you use your production settings.
 
 ```shell
 DJANGO_SETTINGS_MODULE="tweeter3.settings.production"
