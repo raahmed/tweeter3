@@ -96,8 +96,8 @@ Migrate the database.
     (env)$ python manage.py migrate
     ```
 Load sample fixtures that will populate the database with a handful of users and tweeters.
+**Note:** If fixtures are loaded, a sample user named 'Bob' will always be logged in by default.
 
-    **Note:** If fixtures are loaded, a sample user named 'Bob' will always be logged in by default.
     ```shell
     (env)$ python manage.py loaddata initial_data
     ```
