@@ -9,7 +9,7 @@ Tweeter3 is a basic example Django application that uses [Django Rest Framework]
 
 1. Clone the project.
     ```shell
-    $ git clone https://github.com/nnja/tweeter3
+    $ git clone https://github.com/raahmed/tweeter3
     ```
 2. `cd` intro the project directory
     ```shell
@@ -102,7 +102,7 @@ Run the local server after updating the static assets via:
 
 ## Deploy your app to Azure.
 
-Be sure to update the environment variables which you set locally in Production. Take special care in updating the following to make sure you use your production settings.
+**Note** Be sure to update the environment variables which you set locally in Production. Take special care in updating the following to make sure you use your production settings.
 
 ```shell
 DJANGO_SETTINGS_MODULE="tweeter3.settings.production"
