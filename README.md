@@ -2,7 +2,7 @@
 tweeter3
 =======
 
-Tweeter3 is a basic example Django application that uses [Django Rest Framework](https://github.com/encode/django-rest-framework). This app was developed by [Nina Zakharenko](https://github.com/nnja) and has been copied here and altered with permission.
+Tweeter3 is a basic example Django application that uses [Django Rest Framework](https://github.com/encode/django-rest-framework). This app was developed by [Nina Zakharenko](https://github.com/nnja) and has been copied here and altered git initwith permission.
 
 
 ## Installation Instructions
@@ -62,9 +62,10 @@ WEBSITE_HOSTNAME="your-website-hostname'
 ```
 
 ## Create a production database server using PostgreSQL:
-Next, you should create a production postgres server, create the database and configure it for Django.
-
-After connecting to the production postgres server, create the database and configure it for Django.
+Next, you should create a production postgres server.
+Then connect to the production postgres server and create the database.
+Once you have created the database, you need to configure it for Django. 
+To do so, first run the following postgres command after connecting to Postgres.
 
 Next in postgres run:
 ```sql
@@ -77,9 +78,7 @@ ALTER ROLE tweeterapp SET timezone TO 'UTC';
 \q
 ```
 
-Lastly, run the migrations to your postgres database:
-
-Migrate the database.
+Then, run the migrations locally to your postgres database:
 
 ```
      # run production migrations
