@@ -9,7 +9,7 @@ Tweeter3 is a basic example Django application that uses [Django Rest Framework]
 
 1. Clone the project.
     ```shell
-    $ git clone https://github.com/nnja/tweeter3
+    $ git clone https://github.com/raahmed/tweeter3
     ```
 2. `cd` intro the project directory
     ```shell
