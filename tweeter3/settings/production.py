@@ -2,12 +2,12 @@ from tweeter3.settings.base import *
 
 import os
 
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = os.environ.get('SECRET_KEY', 'my-secret-key')
 
 DEBUG = False
 
-AZURE_APPSERVICE_HOSTNAME = os.environ['AZURE_APPSERVICE_HOSTNAME']
-ALLOWED_HOSTS = [f"{AZURE_APPSERVICE_HOSTNAME}.azurewebsites.net"]
+WEBSITE_HOSTNAME = os.environ.get('WEBSITE_HOSTNAME', '')
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", f"{WEBSITE_HOSTNAME}.azurewebsites.net"]
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
@@ -26,6 +26,23 @@ DATABASES = {
         'HOST': f'{DB_HOST}.postgres.database.azure.com',
         'PORT': '',
     }
+}
+
+# Need to explicitly enable logging for production configurations
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'INFO'),
+        },
+    },
 }
 
 if os.environ.get('SEND_ADMIN_EMAILS'):
