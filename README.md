@@ -102,6 +102,8 @@ Run the local server after updating the static assets via:
 
 ## Deploy your app to Azure.
 
+Go ahead and deploy your app to Azure.
+
 **Note** Be sure to update the environment variables which you set locally in Production. Take special care in updating the following to make sure you use your production settings.
 
 ```shell
