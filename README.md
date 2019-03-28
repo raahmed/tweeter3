@@ -5,7 +5,7 @@ tweeter3
 Tweeter3 is a basic example Django application that uses [Django Rest Framework](https://github.com/encode/django-rest-framework). This app was developed by [Nina Zakharenko](https://github.com/nnja) and [Dan Taylor](https://github.com/qubitron) and has been copied here and altered git initwith permission.
 
 
-## Skip If Using Windows.
+## The following has already been done.
 
 1. Clone the project.
     ```shell
