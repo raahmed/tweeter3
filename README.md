@@ -26,6 +26,7 @@ Tweeter3 is a basic example Django application that uses [Django Rest Framework]
     ```
 ## Begin Here.
 
+After making sure that you have activated your venv (Step 3 above)
 5. Migrate the database.
     ```shell
     (env)$ python manage.py migrate
